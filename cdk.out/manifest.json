@@ -1,0 +1,545 @@
+{
+  "version": "18.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaTriggerStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaTriggerStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/LambdaTriggerStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c",
+              "id": "fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c",
+              "packaging": "zip",
+              "sourceHash": "fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c",
+              "s3BucketParameter": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cS3Bucket92E4288D",
+              "s3KeyParameter": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cS3VersionKey2F9E2C3A",
+              "artifactHashParameter": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cArtifactHashC55FAFE1"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:186:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:86:19)",
+              "LambdaTriggerStack.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:683:29)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:53",
+              "withoutDeprecationWarnings (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:218:12)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:14)",
+              "new Asset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:152:40)",
+              "AssetCode.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:285:20)",
+              "new Function (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:701:29)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:42:16)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyFirstBucket/Key/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFirstBucketKeyF51CDC6D",
+            "trace": [
+              "new Key (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-kms\\lib\\key.ts:652:22)",
+              "Bucket.parseEncryption (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1846:52)",
+              "new Bucket (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1669:54)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:21:20)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyFirstBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFirstBucketB8884501",
+            "trace": [
+              "new Bucket (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1676:22)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:21:20)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyFirstBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFirstBucketNotifications7338EF1F",
+            "trace": [
+              "BucketNotifications.createResourceOnce (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:132:23)",
+              "BucketNotifications.addNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:62:27)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:59",
+              "Bucket.withNotifications (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:854:5)",
+              "Bucket.addEventNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:10)",
+              "S3EventSource.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda-event-sources\\lib\\s3.ts:31:19)",
+              "Function.addEventSource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:453:12)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:49:8)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyFirstBucket/AllowBucketNotificationsToLambdaTriggerStackMyFunction0EFC835A": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFirstBucketAllowBucketNotificationsToLambdaTriggerStackMyFunction0EFC835AECC8DFD5",
+            "trace": [
+              "Function.addPermission (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:356:5)",
+              "LambdaDestination.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3-notifications\\lib\\lambda.ts:26:15)",
+              "BucketNotifications.addNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:66:32)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:59",
+              "Bucket.withNotifications (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:854:5)",
+              "Bucket.addEventNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:10)",
+              "S3EventSource.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda-event-sources\\lib\\s3.ts:31:19)",
+              "Function.addEventSource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:453:12)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:49:8)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRoleF48FFE04",
+            "trace": [
+              "new Role (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:358:18)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:29:20)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRoleDefaultPolicyA36BE1DD",
+            "trace": [
+              "new Policy (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:400:28)",
+              "Function.addToPrincipal (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:115:26)",
+              "Bucket.grant (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:917:27)",
+              "Bucket.grantReadWrite (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:775:17)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:54:12)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/MyFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyFunction3BAA72D1",
+            "trace": [
+              "new Function (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:764:35)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:42:16)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/AssetParameters/fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cS3Bucket92E4288D",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:169:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:86:19)",
+              "LambdaTriggerStack.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:683:29)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:53",
+              "withoutDeprecationWarnings (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:218:12)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:14)",
+              "new Asset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:152:40)",
+              "AssetCode.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:285:20)",
+              "new Function (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:701:29)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:42:16)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/AssetParameters/fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cS3VersionKey2F9E2C3A",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:169:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:86:19)",
+              "LambdaTriggerStack.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:683:29)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:53",
+              "withoutDeprecationWarnings (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:218:12)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:14)",
+              "new Asset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:152:40)",
+              "AssetCode.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:285:20)",
+              "new Function (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:701:29)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:42:16)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/AssetParameters/fd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802c/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfd2e0c173a5972e36a1b6b9d09405508c7b646a7f18ed746001304f10d1f802cArtifactHashC55FAFE1",
+            "trace": [
+              "new FileAssetParameters (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:169:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:86:19)",
+              "LambdaTriggerStack.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:683:29)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:53",
+              "withoutDeprecationWarnings (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:218:12)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:91:14)",
+              "new Asset (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:152:40)",
+              "AssetCode.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:285:20)",
+              "new Function (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:701:29)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:42:16)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC",
+            "trace": [
+              "new Role (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:358:18)",
+              "new NotificationsResourceHandler (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:65:31)",
+              "Function.singleton (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:45:16)",
+              "BucketNotifications.createResourceOnce (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:119:52)",
+              "BucketNotifications.addNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:62:27)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:59",
+              "Bucket.withNotifications (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:854:5)",
+              "Bucket.addEventNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:10)",
+              "S3EventSource.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda-event-sources\\lib\\s3.ts:31:19)",
+              "Function.addEventSource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:453:12)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:49:8)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36",
+            "trace": [
+              "new Policy (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:400:28)",
+              "new NotificationsResourceHandler (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:72:15)",
+              "Function.singleton (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:45:16)",
+              "BucketNotifications.createResourceOnce (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:119:52)",
+              "BucketNotifications.addNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:62:27)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:59",
+              "Bucket.withNotifications (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:854:5)",
+              "Bucket.addEventNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:10)",
+              "S3EventSource.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda-event-sources\\lib\\s3.ts:31:19)",
+              "Function.addEventSource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:453:12)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:49:8)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691",
+            "trace": [
+              "new NotificationsResourceHandler (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:97:22)",
+              "Function.singleton (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource-handler.ts:45:16)",
+              "BucketNotifications.createResourceOnce (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:119:52)",
+              "BucketNotifications.addNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\notifications-resource\\notifications-resource.ts:62:27)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:59",
+              "Bucket.withNotifications (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:854:5)",
+              "Bucket.addEventNotification (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:844:10)",
+              "S3EventSource.bind (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda-event-sources\\lib\\s3.ts:31:19)",
+              "Function.addEventSource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:453:12)",
+              "new LambdaTriggerStack (C:\\Users\\HP\\Desktop\\lambda-trigger\\lib\\lambda-trigger-stack.ts:49:8)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\bin\\lambda-trigger.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Module.m._compile (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1455:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\index.ts:1458:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:567:12)",
+              "bootstrap (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:85:10)",
+              "main (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:54:10)",
+              "Object.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\ts-node\\src\\bin.ts:717:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1103:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (node:events:646:26)",
+              "process.emit (node:events:526:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:613:40)"
+            ]
+          }
+        ],
+        "/LambdaTriggerStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (node:events:646:26)",
+              "process.emit (node:events:526:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (C:\\Users\\HP\\Desktop\\lambda-trigger\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:613:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "LambdaTriggerStack"
+    }
+  }
+}
